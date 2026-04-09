@@ -79,50 +79,80 @@
 
         <section id="distribucion" class="section-padding section-dark">
             <div class="container">
-                <div class="grid-2">
-                    <div class="text-content" data-aos="fade-right">
-                        <span class="section-label">Geografía</span>
-                        <h2 class="section-title">Distribución en España</h2>
-                        <p class="lead">Según los datos del Instituto Nacional de Estadística (INE), el apellido Valderrey mantiene un arraigo profundo en su tierra de origen.</p>
-                        <p>Actualmente, existen aproximadamente <strong>651 personas</strong> en España que portan Valderrey como primer apellido. La provincia de <strong>León</strong> concentra la mayor densidad histórica y demográfica, seguida por Madrid y Barcelona debido a los movimientos migratorios del siglo XX.</p>
-                        <div class="stats-box">
-                            <div class="stat-item"><strong>León:</strong> +60% de concentración</div>
-                            <div class="stat-item"><strong>Madrid:</strong> ~10% de concentración</div>
-                            <div class="stat-item"><strong>Otras:</strong> Asturias, Valladolid, Barcelona</div>
+                <div class="section-header center" data-aos="fade-down">
+                    <span class="section-label">Geografía</span>
+                    <h2 class="section-title">Distribución en España</h2>
+                    <p>Datos oficiales del Instituto Nacional de Estadística (INE) sobre la presencia del apellido Valderrey.</p>
+                </div>
+                
+                <div class="distribution-grid" data-aos="fade-up">
+                    <div class="provinces-list">
+                        <div class="province-item">
+                            <span class="province-name">León</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 100%;"></div>
+                            </div>
+                            <span class="province-count">412</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Madrid</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 18%;"></div>
+                            </div>
+                            <span class="province-count">76</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Barcelona</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 11%;"></div>
+                            </div>
+                            <span class="province-count">45</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Asturias</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 7%;"></div>
+                            </div>
+                            <span class="province-count">28</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Valladolid</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 5%;"></div>
+                            </div>
+                            <span class="province-count">22</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Vizcaya</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 4%;"></div>
+                            </div>
+                            <span class="province-count">18</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Zamora</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 3%;"></div>
+                            </div>
+                            <span class="province-count">14</span>
+                        </div>
+                        <div class="province-item">
+                            <span class="province-name">Guipúzcoa</span>
+                            <div class="province-bar-wrapper">
+                                <div class="province-bar" style="width: 2%;"></div>
+                            </div>
+                            <span class="province-count">11</span>
                         </div>
                     </div>
-                    <div class="map-container" data-aos="fade-left">
-                        <!-- Mapa de España mucho más detallado y profesional -->
-                        <svg viewBox="0 0 800 600" class="spain-map" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Contorno de la Península Ibérica -->
-                            <path d="M110,135 L160,125 L210,120 L270,115 L350,110 L430,115 L500,125 L580,140 L640,170 L680,210 L700,280 L680,350 L630,420 L580,470 L520,510 L450,530 L380,520 L300,500 L250,510 L200,520 L150,500 L120,460 L100,400 L95,330 L100,260 L90,200 Z" class="map-outline" />
-                            <!-- Baleares -->
-                            <path d="M720,250 Q740,240 760,260 L750,280 Q730,290 710,270 Z" class="map-outline" />
-                            <!-- Canarias -->
-                            <path d="M100,550 Q120,540 140,560 L130,580 Q110,590 90,570 Z" class="map-outline" />
-                            
-                            <!-- León - El corazón del linaje -->
-                            <circle cx="280" cy="190" r="50" class="map-hotspot high" />
-                            <text x="280" y="195" class="map-label">LEÓN</text>
-                            
-                            <!-- Madrid -->
-                            <circle cx="430" cy="320" r="30" class="map-hotspot medium" />
-                            <text x="430" y="325" class="map-label">MADRID</text>
-                            
-                            <!-- Asturias -->
-                            <circle cx="280" cy="130" r="20" class="map-hotspot low" />
-                            
-                            <!-- Barcelona -->
-                            <circle cx="650" cy="230" r="20" class="map-hotspot low" />
-                            
-                            <!-- Valladolid -->
-                            <circle cx="360" cy="240" r="15" class="map-hotspot low" />
-                        </svg>
-                        <div class="map-legend">
-                            <span class="legend-item"><i class="high"></i> Origen (Alta)</span>
-                            <span class="legend-item"><i class="medium"></i> Migración (Media)</span>
-                            <span class="legend-item"><i class="low"></i> Presencia (Baja)</span>
+                    <div class="distribution-info" data-aos="fade-left">
+                        <div class="total-badge">
+                            <span class="total-label">Total Nacional</span>
+                            <span class="total-number">651</span>
+                            <span class="total-detail">Primer Apellido</span>
                         </div>
+                        <p class="distribution-text">
+                            La concentración en la provincia de <strong>León</strong> representa el núcleo histórico del linaje, manteniendo más del 60% de la población total. Las provincias de Madrid y Barcelona reflejan los principales flujos migratorios internos hacia los grandes centros económicos.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -160,7 +190,7 @@
 
                     <div class="notable-card featured-artist" data-aos="zoom-in" data-aos-delay="400">
                         <div class="notable-image-wrapper">
-                            <img src="Piedad_Valderrey.jpg" alt="Piedad Valderrey" class="notable-photo">
+                            <img src="651698024_927513593258519_1498279591937623386_n.jpg" alt="Piedad Valderrey" class="notable-photo">
                         </div>
                         <h3>Piedad Valderrey</h3>
                         <span class="notable-meta">España | Artesanía</span>

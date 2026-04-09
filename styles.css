@@ -358,6 +358,71 @@ p {
     mix-blend-mode: multiply;
 }
 
+/* Historia */
+.historia-intro {
+    max-width: 820px;
+    margin: 0 auto 4rem;
+}
+
+.historia-intro .lead {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.historia-card {
+    padding: 2.5rem;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historia-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.1);
+}
+
+.historia-era {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    background: var(--azur);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+}
+
+.historia-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    color: var(--azur);
+    margin-bottom: 1rem;
+}
+
+.historia-card p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.historia-card p:last-child { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+    .historia-grid { grid-template-columns: 1fr; }
+}
+
 /* Benavides de Órbigo */
 .benavides-grid {
     display: grid;

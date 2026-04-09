@@ -92,25 +92,31 @@
                         </div>
                     </div>
                     <div class="map-container" data-aos="fade-left">
-                        <!-- Simplificación visual del mapa de España para representación heráldica -->
-                        <svg viewBox="0 0 1000 800" class="spain-map">
-                            <path d="M200,100 L300,50 L500,80 L700,50 L850,150 L900,400 L800,600 L600,750 L400,700 L200,750 L100,600 L50,400 Z" class="map-outline" />
+                        <!-- Mapa de España mucho más detallado y profesional -->
+                        <svg viewBox="0 0 800 600" class="spain-map" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Contorno de la Península Ibérica -->
+                            <path d="M110,135 L160,125 L210,120 L270,115 L350,110 L430,115 L500,125 L580,140 L640,170 L680,210 L700,280 L680,350 L630,420 L580,470 L520,510 L450,530 L380,520 L300,500 L250,510 L200,520 L150,500 L120,460 L100,400 L95,330 L100,260 L90,200 Z" class="map-outline" />
+                            <!-- Baleares -->
+                            <path d="M720,250 Q740,240 760,260 L750,280 Q730,290 710,270 Z" class="map-outline" />
+                            <!-- Canarias -->
+                            <path d="M100,550 Q120,540 140,560 L130,580 Q110,590 90,570 Z" class="map-outline" />
+                            
                             <!-- León - El corazón del linaje -->
-                            <circle cx="320" cy="180" r="60" class="map-hotspot high" />
-                            <text x="320" y="180" class="map-label">LEÓN</text>
+                            <circle cx="280" cy="190" r="50" class="map-hotspot high" />
+                            <text x="280" y="195" class="map-label">LEÓN</text>
                             
                             <!-- Madrid -->
-                            <circle cx="500" cy="380" r="30" class="map-hotspot medium" />
-                            <text x="500" y="380" class="map-label">MADRID</text>
+                            <circle cx="430" cy="320" r="30" class="map-hotspot medium" />
+                            <text x="430" y="325" class="map-label">MADRID</text>
                             
                             <!-- Asturias -->
-                            <circle cx="320" cy="100" r="25" class="map-hotspot low" />
+                            <circle cx="280" cy="130" r="20" class="map-hotspot low" />
                             
                             <!-- Barcelona -->
-                            <circle cx="850" cy="300" r="25" class="map-hotspot low" />
+                            <circle cx="650" cy="230" r="20" class="map-hotspot low" />
                             
                             <!-- Valladolid -->
-                            <circle cx="400" cy="250" r="20" class="map-hotspot low" />
+                            <circle cx="360" cy="240" r="15" class="map-hotspot low" />
                         </svg>
                         <div class="map-legend">
                             <span class="legend-item"><i class="high"></i> Origen (Alta)</span>

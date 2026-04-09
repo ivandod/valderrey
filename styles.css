@@ -159,20 +159,57 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    min-height: 100svh; /* fix barra navegador móvil */
+    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(160deg, rgba(0,0,0,0.65) 0%, rgba(0,20,50,0.75) 100%),
-                url('https://images.unsplash.com/photo-1549410191-230919df597c?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
     position: relative;
     color: white;
     text-align: center;
     overflow: hidden;
+    /* Fondo heráldico: gradiente azur+sinople + rejilla de rombos dorados */
+    background:
+        radial-gradient(ellipse 75% 45% at 50% 0%,   rgba(197, 160, 40, 0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 65% at 10% 90%,  rgba(0,  28,  85, 0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 65% at 90% 90%,  rgba(10, 40,  18, 0.45) 0%, transparent 60%),
+        repeating-linear-gradient( 45deg, rgba(197,160,40,0.028) 0, rgba(197,160,40,0.028) 1px, transparent 0, transparent 52px),
+        repeating-linear-gradient(-45deg, rgba(197,160,40,0.028) 0, rgba(197,160,40,0.028) 1px, transparent 0, transparent 52px),
+        linear-gradient(170deg, #04080F 0%, #000D1E 45%, #050E08 100%);
 }
 
-.overlay { display: none; } /* cubierto por el gradient del hero */
+/* Escudo fantasma como marca de agua */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(580px, 78vw);
+    height: min(580px, 78vw);
+    background: url('assets/img/escudo_valderrey.png') center / contain no-repeat;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Pulso suave del aura dorada superior */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 40%;
+    background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(197,160,40,0.07) 0%, transparent 100%);
+    animation: heroAura 9s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes heroAura {
+    0%, 100% { opacity: 0.6; }
+    50%       { opacity: 1; }
+}
+
+.overlay { display: none; }
 
 .hero-content {
     z-index: 10;

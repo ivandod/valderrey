@@ -269,6 +269,75 @@ p {
 .azur { background: var(--azur); }
 .oro { background: linear-gradient(var(--gold-light), var(--gold)); }
 
+/* Notable Personalities Grid */
+.notable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.notable-card {
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.notable-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 5px;
+    background: linear-gradient(to right, var(--gold), var(--gold-light));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+}
+
+.notable-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.notable-card:hover::before {
+    transform: scaleX(1);
+}
+
+.notable-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.notable-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--azur);
+    margin-bottom: 0.5rem;
+}
+
+.notable-meta {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.notable-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
 /* Footer */
 .final-footer {
     background-color: #050505;

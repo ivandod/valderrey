@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linaje Valderrey | Excelencia y Tradición</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="2000">
+            <div class="main-shield-wrapper">
+                <img src="Escudo_de_Valderrey.svg.png" alt="Escudo Valderrey" class="floating-shield">
+            </div>
+            <h1 class="reveal-text">Valderrey</h1>
+            <div class="divider"></div>
+            <p class="hero-tagline">"Val de Rey: Honor grabado en la historia de León"</p>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="origen" class="section-padding">
+            <div class="container">
+                <div class="grid-2" data-aos="fade-up">
+                    <div class="text-content">
+                        <span class="section-label">Fundamentos</span>
+                        <h2 class="section-title">Origen y Etimología</h2>
+                        <p class="lead">El apellido <strong>Valderrey</strong> es un testimonio vivo de la geografía y la historia leonesa.</p>
+                        <p>Nacido como un apellido toponímico, su cuna se sitúa en la villa homónima en la comarca de la <strong>Maragatería</strong>. El nombre es una joya etimológica: una contracción del castellano antiguo <strong>"Val de Rey"</strong> (Valle del Rey).</p>
+                        <p>Esta denominación evoca un pasado donde estas tierras no eran meros territorios, sino dominios bajo la protección directa de la corona, sirviendo como refugio y senda real durante los siglos de consolidación del Reino de León.</p>
+                    </div>
+                    <div class="image-placeholder" data-aos="fade-left">
+                        <div class="castle-outline"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="section-dark section-padding">
+            <div class="container">
+                <div class="section-header center" data-aos="fade-down">
+                    <span class="section-label">Legado</span>
+                    <h2 class="section-title">Crónica de un Linaje</h2>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Solar de León</h3>
+                            <p>Establecimiento de las casas solares originales. El linaje se forja entre las montañas y valles leoneses antes de iniciar su expansión por la península.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>1557: San Quintín</h3>
+                            <p>Miembros del linaje Valderrey, sirviendo en la guardia del Duque de Feria, demuestran su valor en una de las batallas más decisivas de la historia de España.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Expansión Atlántica</h3>
+                            <p>El apellido cruza el océano hacia el Nuevo Mundo, arraigando con fuerza en Venezuela y Argentina, donde hoy la comunidad Valderrey florece con orgullo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="heraldica" class="section-padding">
+            <div class="container">
+                <div class="heraldry-focus" data-aos="zoom-in">
+                    <h2 class="section-title center">Heráldica de Prestigio</h2>
+                    <div class="shield-analysis">
+                        <div class="shield-part" data-aos="flip-left">
+                            <div class="color-swatch sinople"></div>
+                            <h4>Sinople</h4>
+                            <p>El verde del escudo simboliza la esperanza, la libertad y la abundancia de las tierras de origen.</p>
+                        </div>
+                        <div class="shield-part" data-aos="flip-left" data-aos-delay="200">
+                            <div class="color-swatch azur"></div>
+                            <h4>Azur</h4>
+                            <p>El azul representa la lealtad eterna y la justicia que guiaba a los señores del valle.</p>
+                        </div>
+                        <div class="shield-part" data-aos="flip-left" data-aos-delay="400">
+                            <div class="color-swatch oro"></div>
+                            <h4>Oro y Plata</h4>
+                            <p>Metales preciosos que denotan la nobleza del espíritu y la firmeza de las convicciones familiares.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="final-footer">
+        <div class="footer-content">
+            <img src="Escudo_de_Valderrey.svg.png" alt="Escudo Small" class="footer-logo">
+            <p class="footer-tradition">Valderrey: Honor, Lealtad, Tradición.</p>
+            <div class="footer-divider"></div>
+            <p class="copyright">Archivo Genealógico &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+
+        window.addEventListener('scroll', () => {
+            const progress = document.querySelector('.scroll-progress');
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progressPercentage = (window.pageYOffset / totalHeight) * 100;
+            progress.style.width = progressPercentage + "%";
+        });
+    </script>
+</body>
+</html>

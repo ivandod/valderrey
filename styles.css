@@ -513,6 +513,26 @@ p {
     margin: 2rem auto;
 }
 
+.footer-author {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: var(--gold-light);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--gold);
+}
+
 .copyright {
     font-size: 0.9rem;
     color: #666;

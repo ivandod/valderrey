@@ -308,6 +308,47 @@ p {
     transform: scaleX(1);
 }
 
+.notable-image-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.notable-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.notable-card:hover .notable-photo {
+    transform: scale(1.1);
+}
+
+.btn-notable {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--gold);
+    color: white;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-notable:hover {
+    background: var(--azur);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 .notable-icon {
     font-size: 3rem;
     margin-bottom: 1.5rem;
